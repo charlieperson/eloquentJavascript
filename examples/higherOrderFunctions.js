@@ -10,3 +10,12 @@ function noisy(f) {
     return val;
   };
 }
+
+function unless(test, then) {
+  if (!test) then();
+}
+function repeat(times, body) {
+  for(i=0; i<times; i++) {
+    body(i);
+  }
+}
