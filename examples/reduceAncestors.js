@@ -16,3 +16,9 @@ function sharedDNA(person, fromMother, fromFather) {
   else
     return (fromMother + fromFather) / 2;
 }
+
+function forEach(array, action) {
+  for(i=0; i<array.length; i++) {
+    action(array[i]);
+  }
+}
